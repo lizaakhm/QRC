@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300&family=Pangolin&display=swap');
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cont1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: pink;
+}
+.imgc{
+    width: 240px;
+    height: 250px;
+    display: block;
+}
+.prob{
+    width: 300px;
+    font-family: 'Handjet', cursive;
+    font-size: 60px;
+    position: absolute;
+    top: 580px;
+    left: 45%;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    z-index: 10;
+    }
+
+    @keyframes move {
+    
+        0%{
+            top: 50%;
+            opacity: 14%;
+        }
+
+        7%{
+            opacity: 0%;
+        }
+
+        50%{
+            bottom:70%;
+      
+        }
+    
+    }
+
+    .b-a{
+      border-radius: 3px;
+      width: 104px;
+      height: 30px;
+      position: absolute;
+      margin-top: 350px;
+      background-color: palevioletred;
+      border: .5px solid pink;
+      animation-name: opacity ;
+      animation-duration: 50s;
+      animation-fill-mode: forwards;
+    }
+
+    .animation{
+        text-decoration: none;
+        color: aliceblue;
+        font-size: 30px;
+        font-family: 'Handjet', cursive;
+        text-align: center;
+        padding: 0;
+    }
+
+    @keyframes opacity {
+    
+        0%{
+            opacity: 0%;
+        }
+
+        50%{
+            opacity:100%;
+      
+        }
+    
+    }
+    .welcome{
+        color: pink;
+        font-family: 'Handjet', cursive;
+        font-size: 40px;
+        margin: 30px;
+    }
+    .mrgn-tp{
+        margin-top: 40px;
+    }
+    .mrg-lf{
+        margin-left: 50px;
+    }
+    .all{
+    display:flex; 
+    align-items: center;
+    justify-content: center;
+    }
+
+    .qr-cont{
+        display: flex;
+        background-color: pink;
+        height: 380px;
+        width: 621px;
+        border-radius: 8px;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+ #qr-input{
+        height: 50px;
+        width: 300px;
+        border: 1px solid palevioletred;
+        border-radius: 8px; 
+        display: block;  
+ }
+
+ #qr-button{
+  border-radius: 3px;
+  width: 104px;
+  height: 30px;
+  position: absolute;
+  background-color: palevioletred;
+  border: .5px solid pink;
+  cursor: pointer;
+  margin-top: 100px;
+  margin-left: 190px;
+  color: white;
+  font-family:'Handjet', cursive;
+  font-size: 25px;
+ }
+
+ #qr-img{
+    position: absolute;
+    top: 264px;
+    right: 666px;
+    width: 200px;
+    height: 200px;
+ }
